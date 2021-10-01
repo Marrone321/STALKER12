@@ -638,8 +638,8 @@ obj/item/clothing/head/winterhood/stalker/ecolog/New()
 
 /obj/item/clothing/suit/civ
 	name = "flak jacket"
-	desc = "A dated flak jacket that will provide slightly better protection than the sunrise suit"
-	eng_desc = "A dated flak jacket that will provide slightly better ballistic protection than the sunrise suit but is poor against damage from mutants and anomalies."
+	desc = "A dated flak jacket that will provide slight ballistic protection and is poor against damage from mutants and anomalies."
+	eng_desc = "A dated flak jacket that will provide slight ballistic protection and is poor against damage from mutants and anomalies."
 	icon_state = "flakjacket"
 	item_state = "flakjacket"
 	blood_overlay_type = "armor"
@@ -649,7 +649,25 @@ obj/item/clothing/head/winterhood/stalker/ecolog/New()
 	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	strip_delay = 80
 	put_on_delay = 60
-	armor = list(melee = 20, bullet = 45, laser = 10,burn = 10, bomb = 20, bio = 0, rad = 0, electro = 0, psy = 0)
+	armor = list(melee = 20, bullet = 30, laser = 10,burn = 10, bomb = 35, bio = 0, rad = 0, electro = 0, psy = 0)
+	durability = 150
+	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
+
+/obj/item/clothing/suit/toggle/flight
+	name = "flight vest"
+	desc = "A regional flight jacket. features an added button-in/out liner for extra warmth, along with a cotton-fiber stretch coif. You'd have to wonder how exactly it got here into the zone other than previous disaster."
+	eng_desc = "A regional flight jacket. features an added button-in/out liner for extra warmth, along with a cotton-fiber stretch coif. You'd have to wonder how exactly it got here into the zone other than previous disaster."
+	icon_state = "flightvest"
+	item_state = "flightvest"
+	blood_overlay_type = "armor"
+	togglename = "buttons"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	strip_delay = 80
+	put_on_delay = 60
+	armor = list(melee = 45, bullet = 30, laser = 10,burn = 10, bomb = 20, bio = 0, rad = 0, electro = 0, psy = 0)
 	durability = 150
 	modifications = list("lining_suit" = 0, "padding_suit" = 0, "material_suit" = 0, "accessory_slot" = 0)
 
